@@ -5,11 +5,12 @@ This project was built with Turbo 360. To learn more, click here: https://www.tu
 ## Instructions
 
 ```
-<ul>
-<li>Setup Node Js</li> 
-<li>Setup MongoDB DataBase</li> 
-<li>Clone Repository in System</li> 
-</ul>
+
+Setup Node Js\ 
+Setup MongoDB DataBase\ 
+Clone Repository in System 
+
+
 ```
 
 Then run npm install from the root directory:
@@ -40,8 +41,8 @@ To create a new project
 
 ```
 
-turbo new <MY_PROJECT_NAME>
-cd <MY_PROJECT_NAME>
+turbo new <MY_PROJECT_NAME>\
+cd <MY_PROJECT_NAME>\
 npm install
 
 ```
