@@ -40,9 +40,13 @@ To create a new project
 
 ```
 
-turbo new <MY_PROJECT_NAME>\
-cd <MY_PROJECT_NAME>\
+turbo new <MY_PROJECT_NAME>
+cd <MY_PROJECT_NAME>
 npm install
+
+*Generates a basic Node JS with Express app.
+*Included in assets are Bootstrap and JQuery.
+*Default templating engine is Mustache JS.
 
 ```
 
