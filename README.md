@@ -30,10 +30,11 @@ Then run devserver from project root directory:
 turbo devserver
 ```
 
-To build for production, run build:
+Then run mongodb server from root directory:
 
 ```
-npm run build
+mongod 
+mongoimport –jsonArray –db database_name –collection collection_name –file file_location
 ```
 
 To create a new project
