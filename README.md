@@ -39,7 +39,6 @@ npm run build
 To create a new project
 
 ```
-
 turbo new <MY_PROJECT_NAME>
 cd <MY_PROJECT_NAME>
 npm install
@@ -47,6 +46,6 @@ npm install
 ```
 <ul>
 <li>Generates a basic Node JS with Express app.</li>
-Included in assets are Bootstrap and JQuery.
-Default templating engine is Mustache JS.
+<li>Included in assets are Bootstrap and JQuery.</li>
+<li>Default templating engine is Mustache JS.</li>
 </ul>
