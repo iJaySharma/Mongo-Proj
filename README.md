@@ -5,35 +5,35 @@ This project was built with Turbo 360. To learn more, click here: https://www.tu
 ## Instructions
 
 ```
-
-Setup Node Js <br />
-Setup MongoDB DataBase <br />
-Clone Repository in System <br />
-
+<ul>
+<li>Setup Node Js</li> 
+<li>Setup MongoDB DataBase</li> 
+<li>Clone Repository in System</li> 
+</ul>
 ```
 
 Then run npm install from the root directory:
 
 ```
-$ npm install
+npm install
 ```
 
 To run dev server, install Turbo CLI globally:
 
 ```
-$ npm install turbo-cli -g
+npm install turbo-cli -g
 ```
 
 Then run devserver from project root directory:
 
 ```
-$ turbo devserver
+turbo devserver
 ```
 
 To build for production, run build:
 
 ```
-$ npm run build
+npm run build
 ```
 
 To create a new project
