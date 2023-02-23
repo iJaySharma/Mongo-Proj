@@ -31,6 +31,40 @@ Profile.find(filters)
 })
 })
 
+// Non-RESTful
+router.get('/profile/update', (req,res) => {
+	const query = req.query // required id, key=value 
+	const profileId = query.id
+	delete query['id']
+
+	Profile.findByIdAndUpdate(profileId,query,{new:true})
+	.then(profile => {
+		res.json({
+			confirmation: 'success',
+			data: profile
+		})
+	})
+	.catch(err => {
+res.json({
+	confirmation: 'fail',
+	message: err.message
+})
+	})
+
+})
+
+router.get('/profile/remove',(req,res) => {
+	const query = req.query
+
+	Profile.findByIdAndRemove(query.id)
+	.then(data => {
+		res.json({
+			confirmation: 'success',
+			data: 'Profile '+query.id+'successfully removed.'
+		})
+	})
+})
+
 router.get('/profile/:id', (req,res) => {
 	const id = req.params.id
 
@@ -48,5 +82,25 @@ router.get('/profile/:id', (req,res) => {
 		})
 	})
 })
+
+
+
+router.post('/profile', (req,res) => {
+
+Profile.create(req.body)
+.then(profile => {
+	res.json({
+		confirmation: 'success',
+		data: profile
+	})
+})
+.catch(err => {
+	res.json({
+		confirmation: 'fail',
+		message: err.message
+	})
+})
+})
+
 
 module.exports = router
