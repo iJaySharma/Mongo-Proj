@@ -44,8 +44,4 @@ cd <MY_PROJECT_NAME>
 npm install
 
 ```
-<ul>
-<li>Generates a basic Node JS with Express app.</li>
-<li>Included in assets are Bootstrap and JQuery.</li>
-<li>Default templating engine is Mustache JS.</li>
-</ul>
+
